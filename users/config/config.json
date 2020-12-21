@@ -1,0 +1,44 @@
+{
+  "debug": true,
+  "server": {
+    "readableAll": false,
+    "host": "127.0.0.1",
+    "exclusive": true,
+    "https": false,
+    "port": 3001,
+    "path": null
+  },
+  "service": {
+    "key": "~/keys/api.pem"
+  },
+  "services": {
+    "file-loader": {
+      "url": "http://127.0.0.1:2711",
+      "key": "keys/file-loader.pem",
+      "auth": false
+    },
+    "web-socket": {
+      "url": "http://127.0.0.1:8096"
+    }
+  },
+  "clientServices": {
+    "image_server_api": "http://127.0.0.1:2711"
+  },
+  "mongodb": {
+    "uri": "uri",
+    "options": {
+      "useUnifiedTopology": true,
+      "useNewUrlParser": true
+    }
+  },
+  "ws": {
+    "port": 3001
+  },
+  "admin": [
+    {
+      "login": "User1",
+      "password": "$2b$12$pGYmpoK1/0VAuDRSiXiNxur5is8FI6IC2cZOifbysWb7JbIUAoQlS"
+    }
+  ],
+  "secretJwtKey": "twa1kkEyjkhbmbvhj"
+}
